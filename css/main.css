@@ -532,9 +532,10 @@ main {
 
 .popup__close {
   width: 3.2rem;
-  height: 8.2rem;
+  height: 14.2rem;
   text-indent: -9999px;
   position: absolute;
+  background-color: white;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
