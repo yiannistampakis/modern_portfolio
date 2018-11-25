@@ -1,8 +1,12 @@
 $primary-color: #444;
 $secondary-color: #eece1a;
+
 $show-home-image: true;
 $home-image: url(../img/background.jpg);
+
 $background-opacity: 0.5;
+
+$show-modal: false;
 
 @mixin easeOut {
   transition: all 0.5s ease-out;
@@ -29,6 +33,32 @@ $background-opacity: 0.5;
         // background: rgba($primary-color, $background-opacity);
       }
     }
+  }
+}
+
+@mixin setBtnLnBg {
+  @if $show-modal {
+    .menu-btn &.btn-line {
+      background: #000;
+    }
+  }
+
+  @if $show-modal==false {
+    $show-modal: true;
+
+    .menu-btn &.btn-line {
+      background: #000;
+    }
+  }
+}
+
+@function set-btn-line-color($show-modal) {
+  @if ($show-modal==true) {
+    @return #000;
+  }
+
+  @else {
+    @return #fff;
   }
 }
 
