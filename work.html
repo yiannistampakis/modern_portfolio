@@ -70,15 +70,17 @@
 
         <div class="projects">
             <div class="item">
-                <a href="#!">
-                    <img src="img/projects/proj1.jpg" alt="Project">
-                </a>
-                <a href="#" class="btn-light">
-                    <i class="fas fa-eye"></i>&nbsp;Ορθοπεδικά
-                </a>
-                <!-- <a href="#" class="btn-dark">
+                <span class="card card_header">
+                    <a href="#popup-article">
+                        <img class="card_preview" src="img/projects/proj1.jpg" alt="Project">
+                    </a>
+                    <a href="#popup-article" class="btn-light card-link">
+                        <i class="fas fa-eye"></i>&nbsp;Ορθοπεδικά
+                    </a>
+                    <!-- <a href="#" class="btn-dark">
                     <i class="fab fa-github"></i>&nbsp;Github
                 </a> -->
+                </span>
             </div>
             <div class="item">
                 <a href="#!">
@@ -131,6 +133,16 @@
         Copyright &copy; 2018
 
     </footer>
+
+    <div id="popup-article" class="popup">
+        <div class="popup__block">
+            <h1 class="popup__title">Demo</h1>
+            <p></p>
+            <img src="" class="popup__media popup__media_right" alt="">
+
+            <a href="#" class="popup__close">close</a>
+        </div>
+    </div>
 
     <script src="js/main.js"></script>
 </body>
