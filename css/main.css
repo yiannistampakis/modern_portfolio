@@ -557,8 +557,8 @@ main {
     right: 20px; } }
 
 /*
-* demo page
-*/
+  * demo page
+  */
 @media screen and (min-width: 768px) {
   html {
     font-size: 62.5%; } }
