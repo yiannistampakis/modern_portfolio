@@ -85,6 +85,25 @@ main {
     h1 {
       // margin-top: 20vh;
     }
+
+    .about-info {
+      display: grid;
+      grid-gap: 30px;
+      grid-template-areas: "bioimage job";
+      id-template-columns: repeat(3, 1fr);
+
+      .job {
+        background: lighten($primary-color, 30);
+        background: transparent\9;
+        background: rgba(0, 0, 0, 0.4);
+
+        padding: 0.5rem;
+        border-bottom: $secondary-color 5px solid;
+        opacity: unit($number: 50);
+
+        font-size: 1.5rem;
+      }
+    }
   }
 }
 
@@ -92,40 +111,45 @@ main {
   display: grid;
   grid-gap: 30px;
   grid-template-areas:
-    "bioimage bio bio"
-    "job1 job2 job3";
-  grid-template-columns: repeat(3, 1fr);
+    "bioimage job1"
+    "job2 job3"
+    "job4 job5";
+  // grid-template-columns: 60px auto;
 
   .bio-image {
     grid-area: bioimage;
     margin: auto;
     border-radius: 50%;
-    border: $secondary-color 3px solid;
+    border: 3px solid;
   }
 
-  .bio {
-    grid-area: bio;
-    font-size: 1.5rem;
-  }
+  // .bio {
+  //   grid-area: bio;
+  //   font-size: 1.5rem;
+  // }
 
-  .job1 {
+  .job-1 {
     grid-area: job1;
   }
 
-  .job2 {
+  .job-2 {
     grid-area: job2;
+    border-bottom: $secondary-color 5px solid;
   }
 
-  .job3 {
+  .job-3 {
     grid-area: job3;
+    border-bottom: $secondary-color 5px solid;
   }
 
-  .job4 {
+  .job-4 {
     grid-area: job4;
+    border-bottom: $secondary-color 5px solid;
   }
 
-  .job5 {
+  .job-5 {
     grid-area: job5;
+    border-bottom: $secondary-color 5px solid;
   }
 
   .job {
@@ -135,7 +159,9 @@ main {
 
     padding: 0.5rem;
     border-bottom: $secondary-color 5px solid;
-    opacity: unit($number: 50)
+    opacity: unit($number: 50);
+
+    font-size: 1.5rem;
   }
 }
 
