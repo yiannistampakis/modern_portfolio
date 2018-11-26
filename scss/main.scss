@@ -102,6 +102,18 @@ main {
         opacity: unit($number: 50);
 
         font-size: 1.5rem;
+
+        &.extra-grey {
+          background: lighten($primary-color, 30);
+          background: transparent\9;
+          background: rgba(0, 0, 0, 0.6);
+
+          padding: 0.5rem;
+          border-bottom: $secondary-color 5px solid;
+          opacity: unit($number: 50);
+
+          font-size: 1.5rem;
+        }
       }
     }
   }
