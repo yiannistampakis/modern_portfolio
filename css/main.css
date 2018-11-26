@@ -172,11 +172,19 @@ main {
         border-bottom: #eece1a 5px solid;
         opacity: "";
         font-size: 1.5rem; }
+        main#home .about-info .job.extra-grey {
+          background: #919191;
+          background: transparent\9;
+          background: rgba(0, 0, 0, 0.6);
+          padding: 0.5rem;
+          border-bottom: #eece1a 5px solid;
+          opacity: "";
+          font-size: 1.5rem; }
 
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: "bioimage job1" "job2 job3" "job4 job5"; }
+  grid-template-areas: "bioimage job1" "job2 job3" "job4 job5"; }
   .about-info .bio-image {
     grid-area: bioimage;
     margin: auto;
@@ -296,7 +304,7 @@ main {
       width: 100px;
       height: 100px; }
   .about-info {
-    grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
+    grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
     grid-template-columns: 1fr; }
   .projects {
     grid-template-columns: repeat(2, 1fr); } }
